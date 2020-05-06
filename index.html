@@ -10,11 +10,12 @@
         .box {
             background-color: green;
             color: white;
-            transition: background-color .5s ease-in-out;
+            transition: all .5s ease-in-out;
         }
 
         .box:hover {
             background-color: red;
+            color: blue;
         }
     </style>
 </head>
@@ -26,6 +27,8 @@
     <p>Now the background color just changes. There are no steps between.</p>
     <p>transition: property seconds how</p>
     <p>ease-in-out: 스르륵 나타나고 스르륵 사라지는 효과</p>
+    <p>transition: all 로 background-color, color 모두에 효과를 준다.</p>
+    <p>transition은 어떤 state가 바뀔 때 적용되는 것이다. (visited를 뺀 hover, active, focus 에서 효과적으로 적용된다.)</p>
 </body>
 
 </html>
