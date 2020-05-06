@@ -7,8 +7,16 @@
     <meta name="author" content="Nomad Coders">
     <title>Flex</title>
     <style>
+        html,
+        body {
+            height: 100%;
+        }
+
         .boxes {
             display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
         }
 
         .box {
@@ -25,18 +33,13 @@
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
     </div>
     <p>Flex 등장 이전에는</p>
     <p>맨 왼쪽 박스와 브라우저의 사이, 맨 오른쪽 박스와 스크린 사이의 간격을 일정하게 맞출 수 없다는 문제점이 있었다.</p>
     <p>Margin으로 맞추더라도 한계가 있었다. 자동으로 양 사이드 간격을 맞춰주는 기능이 없었던 것이다.</p>
     <p>그래서 각각의 박스들(children)에게 명령하지 않고, 그 부모(father) 클래스에 flex 명령을 내리는 Felx가 등장하게 되었다.</p>
     <p>박스들에 inline-block을 적용시키지 않아도 이미 inline-block처럼 출력이 된다.</p>
-    <p></p>
+    <p>justify-content는 수평으로, align-items는 수직으로 적용된다. </p>
 </body>
 
 </html>
