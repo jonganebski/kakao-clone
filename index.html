@@ -5,77 +5,10 @@
     <meta charset="utf-8">
     <meta name="description" content="Welcome to my Kakao Clone.">
     <meta name="author" content="Nomad Coders">
-    <title>Animations</title>
-    <style>
-        .box {
-            width: 500px;
-            height: 500px;
-            background: red;
-            animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
-        }
-
-        @keyframes scaleAndRotateSquare {
-            0% {
-                transform: none;
-            }
-
-            50% {
-                transform: rotate(1turn) scale(.5, .5);
-            }
-
-            100% {
-                transform: none;
-            }
-        }
-    </style>
+    <title></title>
 </head>
 
 <body>
-    <div class="box"></div>
-    <p>Transformation은 html문서의 element들을 변경, 모습이 변하는 효과를 뜻한다.</p>
-    <p>It gets fun when Transformations come with Transitions.</p>
-
-    <p>Animations. what if I want that keep moving even if I don't hover?</p>
-    <p>@keyframes: Let CSS know that I'm creating animation.</p>
-    <p>Basically you need two steps. 1. from 2. to</p>
-    <p>But if you want more steps, then you write like 0% - 50% - 100%</p>
-    <p>if you don't write 'infinite', it will do just once. </p>
-    <p> https://developer.mozilla.org/en-US/docs/Web/CSS/transform
-        /*Keyword values */
-        transform: none;
-
-        /* Function values */
-        transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
-        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-        transform: perspective(17px);
-        transform: rotate(0.5turn);
-        transform: rotate3d(1, 2.0, 3.0, 10deg);
-        transform: rotateX(10deg);
-        transform: rotateY(10deg);
-        transform: rotateZ(10deg);
-        transform: translate(12px, 50%);
-        transform: translate3d(12px, 50%, 3em);
-        transform: translateX(2em);
-        transform: translateY(3in);
-        transform: translateZ(2px);
-        transform: scale(2, 0.5);
-        transform: scale3d(2.5, 1.2, 0.3);
-        transform: scaleX(2);
-        transform: scaleY(0.5);
-        transform: scaleZ(0.3);
-        transform: skew(30deg, 20deg);
-        transform: skewX(30deg);
-        transform: skewY(1.07rad);
-
-        /* Multiple function values */
-        transform: translateX(10px) rotate(10deg) translateY(5px);
-        transform: perspective(500px) translate(10px, 0, 20px) rotateY(3deg);
-
-        /* Global values */
-        transform: inherit;
-        transform: initial;
-        transform: unset;
-    </p>
 
 </body>
 
