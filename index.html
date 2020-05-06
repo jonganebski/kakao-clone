@@ -15,12 +15,16 @@
         }
 
         @keyframes scaleAndRotateSquare {
-            from {
+            0% {
                 transform: none;
             }
 
-            to {
+            50% {
                 transform: rotate(1turn) scale(.5, .5);
+            }
+
+            100% {
+                transform: none;
             }
         }
     </style>
@@ -34,6 +38,7 @@
     <p>Animations. what if I want that keep moving even if I don't hover?</p>
     <p>@keyframes: Let CSS know that I'm creating animation.</p>
     <p>Basically you need two steps. 1. from 2. to</p>
+    <p>But if you want more steps, then you write like 0% - 50% - 100%</p>
     <p>if you don't write 'infinite', it will do just once. </p>
     <p> https://developer.mozilla.org/en-US/docs/Web/CSS/transform
         /*Keyword values */
