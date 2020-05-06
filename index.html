@@ -18,6 +18,17 @@
         input {
             border: 1px solid yellow;
         }
+
+        .box {
+            background-color: green;
+            display: block;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .box:last-child {
+            background-color: pink;
+        }
     </style>
 </head>
 
@@ -25,11 +36,14 @@
     <div class="container">
         <div class="box"></div>
         <div class="box"></div>
-        <div class="box"></div>
-        <input type="password" required="required">
-        <input type="submit">
+        <div class="box">
+            <input type="password" required="required">
+            <input type="submit">
+        </div>
     </div>
     <p>가상 셀렉터: 셀렉터인데 element가 아닌 것.</p>
+    <p>세 번째 박스만 고르는 방법은 last-child라는 가상 셀렉터를 이용하는 것.</p>
+    <p>이와 같은 방식으로 first-child, nth-child(2), nth-child(2n), nth-child(2n+1)등으로 쓸 수 있다.</p>
 </body>
 
 </html>
