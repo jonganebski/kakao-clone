@@ -5,17 +5,23 @@
     <meta charset="utf-8">
     <meta name="description" content="Welcome to my Kakao Clone.">
     <meta name="author" content="Nomad Coders">
-    <title>Transformations</title>
+    <title>Animations</title>
     <style>
         .box {
             width: 500px;
             height: 500px;
             background: red;
-            transition: transform .5s ease-in-out;
+            animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
         }
 
-        .box:hover {
-            transform: rotate(1turn) scale(.5, .5);
+        @keyframes scaleAndRotateSquare {
+            from {
+                transform: none;
+            }
+
+            to {
+                transform: rotate(1turn) scale(.5, .5);
+            }
         }
     </style>
 </head>
@@ -24,6 +30,11 @@
     <div class="box"></div>
     <p>Transformation은 html문서의 element들을 변경, 모습이 변하는 효과를 뜻한다.</p>
     <p>It gets fun when Transformations come with Transitions.</p>
+
+    <p>Animations. what if I want that keep moving even if I don't hover?</p>
+    <p>@keyframes: Let CSS know that I'm creating animation.</p>
+    <p>Basically you need two steps. 1. from 2. to</p>
+    <p>if you don't write 'infinite', it will do just once. </p>
     <p> https://developer.mozilla.org/en-US/docs/Web/CSS/transform
         /*Keyword values */
         transform: none;
