@@ -5,11 +5,26 @@
     <meta charset="utf-8">
     <meta name="description" content="Welcome to my Kakao Clone.">
     <meta name="author" content="Nomad Coders">
-    <title></title>
+    <title>Media Queries</title>
+    <style>
+        body {
+            background-color: green;
+        }
+
+        @media screen and (min-width:320px) and (max-width:640px) {
+            body {
+                background-color: blue;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
+    <p>브라우저가 큰지 작은지 알아내는 방법을 배워보자.
+        왜냐하면 큰 스크린을 위한 css가 있고, 작은 화면을 위한 css가 있기 때문이다.</p>
+    <p>@media 안에 있는 css는 지정한 화면 크키에서 적용되는 것들이다.
+        반응형 웹사이트를 만들기 위해서 필요한 부분이다.
+    </p>
 </body>
 
 </html>
