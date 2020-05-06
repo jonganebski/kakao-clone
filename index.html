@@ -5,11 +5,31 @@
     <meta charset="utf-8">
     <meta name="description" content="Welcome to my Kakao Clone.">
     <meta name="author" content="Nomad Coders">
-    <title></title>
+    <title>Selectors and Pseudo(가상) Selectors</title>
+    <style>
+        input[type="submit"] {
+            background-color: tomato;
+        }
+
+        input[required="required"] {
+            background-color: blue;
+        }
+
+        input {
+            border: 1px solid yellow;
+        }
+    </style>
 </head>
 
 <body>
-
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <input type="password" required="required">
+        <input type="submit">
+    </div>
+    <p>가상 셀렉터: 셀렉터인데 element가 아닌 것.</p>
 </body>
 
 </html>
