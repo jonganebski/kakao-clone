@@ -12,7 +12,7 @@
             width: 200px;
             height: 200px;
             border: 1px solid black;
-            display: inline-block;
+            display: inline;
         }
     </style>
 </head>
@@ -28,6 +28,13 @@
     <p>Inline Block: 박스들이 서로서로 옆에 있을 수 있다.</p>
     <p>Box는 Block Inline이나 Block 중 하나가 되어야 한다. </p>
     <P>default is Block.</P>
+
+    <p>Inline: 박스의 모든 property value를 지운다. </p>
+    <span class="box">1</span>
+    <span class="box">1</span>
+    <span class="box">1</span>
+    <p>Inline 에서는 더이상 박스가 존재하지 않고, 텍스트만 남는다. 텍스트 컨텐츠에는 너비나 높이가 존재하지 않는다.</p>
+    <P>그러므로 위에 스타일로 정해놨던 것 중 width, height는 더이상 적용되지 않는다. 그 외에는 텍스트에 적용된다.</P>
 </body>
 
 </html>
